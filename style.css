@@ -6,11 +6,11 @@ a{
   color: white;
 }
 
-.container{
-  overflow: hidden;
+.txt-about{
+  padding: 10px;
 }
 
-#home{
+.container{
   overflow: hidden;
 }
 
@@ -34,23 +34,8 @@ a{
     color: white;
 }
 
-.navbar-start{
-  margin-right: 20px;
-}
-
 #about{
   padding-top: 45px;
-}
-
-#beforeAfter{
-  padding-top: 45px;
-  padding-bottom: 130px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.beforeAfterH2{
-  padding-bottom: 30px;
 }
 
 .bg-color-contact{
@@ -77,6 +62,17 @@ a{
 }
 
 /* #region  AVANT / APRES */
+#beforeAfter{
+  padding-top: 45px;
+  padding-bottom: 130px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.beforeAfterH2{
+  padding-bottom: 30px;
+}
+
 .container_avant_apres {
     width:1024px;
     max-width:100%;
