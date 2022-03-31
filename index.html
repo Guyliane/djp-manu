@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>DJP-MANU</title>
+</head>
+
+<body>
+    <!-- #region Barre de navigation fixée -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="#home" class="navbar-item">
+                <img src="/ressources/logo-djpmanu.jpg" alt="logo DJP MANU">
+            </a>
+            <div class="navbar-burger burger" id="btnNav" data-target="menuContent" role="button" aria-label="menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </div>
+        </div>
+        <div id="menuContent" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="#about" class="navbar-item test-menu">A propos</a>
+                <a href="#beforeAfter" class="navbar-item">Avant - Après</a>
+                <a href="#contact" class="navbar-item">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+    <!-- #endregion -->
+
+    <!-- #region Section page d'accueil -->
+    <div class="columns is-desktop is-vcentered" id="home">
+        <div class="column is-6-desktop">
+
+            <section class="hero is-fullheight">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="title is-1">DJP-MANU</h1>
+                        <h2 class="subtitle is-3">Entreprise de couverture</h2>
+                        <button class="button is-rounded is-medium button-css"> <a href="#about">A propos</a></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="column has-text-centered">
+            <img src="ressources/logo-djpmanu-high-size.png" alt="logo DJP MANU">
+        </div>
+    </div>
+    <!-- #endregion -->
+    
+    <!-- #region About -->
+    <section class="container" id="about">
+        <h2 class="title is-1 has-text-centered">A propos</h2>
+
+        <figure class="image container is-128x128">
+            <img src="/ressources/logo-djpmanu.jpg" alt="Logo DJP MANU" class="is-rounded is-centered">
+        </figure>
+
+        <br>
+
+        <div class="columns is-centered">
+            <p class="column is-6 has-text-justified">
+                L'entreprise DJP-MANU est à votre service depuis le 1er mars 2013.Elle vous propose un service de qualité en couverture, zinguerie, pose de fenêtre de toit.Une entreprise familiale à votre écoute.
+            </p>
+        </div>
+    </section>
+    <!-- #endregion -->
+
+    <br><br>
+
+    <!-- #region AVANT / APRES -->
+    <section class="container" id="beforeAfter">
+        <h2 class="title is-1 has-text-centered beforeAfterH2">Avant / Après</h2>
+
+        <div class="container_avant_apres is-mobile">
+            <div class="slider_container">
+                <div class="slider_before"></div>
+                <div class="slider_separator"></div>
+                <div class="slider_after"></div>
+                <input class="slider_range" type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region Nos méthodes -->
+
+    <br><br>
+    <section class="container" id="real">
+        <h2 class="title is-1 has-text-centered">Nos Méthodes</h2>
+        <h2 class="subtitle is-3 has-text-centered has-text-weight-bold subtitle-methode">Un chantier irréprochable</h2>
+
+        <div class="columns is-multiline is-centered is-mobile">
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="/ressources/clean.jpg" alt="logo DJP MANU" class="is-rounded">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h2 class="title is-3 has-text-centered">Un nétoyage avant tout</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="has-text-justified">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea distinctio cumque labore cum autem cupiditate ipsam magnam! Magnam voluptatum suscipit, fugiat adipisci vero aliquid. Id ducimus nisi distinctio fuga.
+                            </p>
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time date="2022-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="/ressources/security.jpg" alt="logo DJP MANU" class="is-rounded">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h2 class="title is-3 has-text-centered">La sécurité avant tout</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="has-text-justified">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea distinctio cumque labore cum autem cupiditate ipsam magnam! Magnam voluptatum suscipit, fugiat adipisci vero aliquid. Id ducimus nisi distinctio fuga.
+                            </p>
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time date="2022-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+
+    <br><br><br><br>
+
+    <!-- #region Contactez-nous -->
+    <div class="bg-color-contact">
+        <form action="https://formsubmit.co/guyliane@live.fr" method="POST">
+        <section class="container contactBox" id="contact">
+            <h2 class="title is-1 has-text-centered label-contact pt-6 pb-5">Contactez-nous</h2>
+            <div class="field">
+                <label for="" class="label label-contact">Nom</label>
+                <div class="control">
+                    <input type="text" class="input" name="nom" placeholder="Nom" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="" class="label label-contact">Prénom</label>
+                <div class="control has-icons-left">
+                    <input type="text" class="input" name="prenom" placeholder="Prénom" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="" class="label label-contact">Email</label>
+                <div class="control has-icons-left">
+                    <input type="email" class="input" name="email" placeholder="Email" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="" class="label label-contact">Message</label>
+                <div class="control">
+                    <textarea class="textarea" name="message" placeholder="Votre message ..." required ></textarea>
+                </div>
+            </div>
+
+            <input type="hidden" name="_subject" value="Nouveau message depuis le site web !">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button type="submit" class="button button-send-css">Envoyer</button>
+                </div>
+            </div>
+        </section>
+        </form>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Footer -->
+    <footer class="footer pb-0">
+        <div class="content has-text-centered">
+            <p>2022 Tous droits réservés à Guyliane DE JESUS PIMENTA. &copy;</p>
+        </div>
+    </footer>
+    <!-- #endregion -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
