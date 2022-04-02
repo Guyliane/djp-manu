@@ -5,6 +5,31 @@ btn.addEventListener('click', function () {
     content.classList.toggle('is-active');
 })
 
+function slide(){
+    let slideValue = document.getElementById("slider_new").value;
+    document.getElementById("my-img_new").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    
+}
+
+let img1 = document.querySelector('.img1');
+//let slider_after = document.querySelector('.slider_after');
+//let slider_Before = slider.querySelector('.slider_before');
+let imgBefore = document.getElementById("before_img")
+let imgAfter = document.getElementById("my-img_new")
+
+function img1Choose(){
+
+    console.log("OK")
+    document.getElementById("before_img").src="/ressources/flower1.jpg";
+    document.getElementById("my-img_new").src="/ressources/flower2.jpg";
+}
+
+img1.addEventListener('click', img1Choose);
+
+
+
+
+
 
 
 /* #region  SLIDER */
@@ -55,6 +80,5 @@ sliders.forEach(function (slider) {
             updateSliderPosition();
         }
     }
-
 });
 /* #endregion */
