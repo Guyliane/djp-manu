@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer SameSite=None src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>DJP-MANU</title>
 </head>
@@ -16,7 +16,7 @@
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a href="#home" class="navbar-item">
-                <img src="/ressources/logo-djpmanu.jpg" alt="logo DJP MANU">
+                <img src="/ressources/logo-djpmanu.jpg" alt="logo DJP MANU" class="petit-logo-menu">
             </a>
             <div class="navbar-burger burger" id="btnNav" data-target="menuContent" role="button" aria-label="menu">
                 <span aria-hidden="true"></span>
@@ -27,7 +27,7 @@
         <div id="menuContent" class="navbar-menu">
             <div class="navbar-end">
                 <a href="#beforeAfter" class="navbar-item">Avant - Après</a>
-                <a href="#real" class="navbar-item test-menu">Nos méthodes</a>
+                <a href="#methodes" class="navbar-item test-menu">Nos méthodes</a>
                 <a href="#contact" class="navbar-item">Nous contacter</a>
             </div>
         </div>
@@ -42,33 +42,35 @@
                     <div class="container has-text-centered">
                         <h1 class="title is-1">DJP-MANU</h1>
                         <h2 class="subtitle is-3">Entreprise de couverture</h2>
-                        <button class="button is-rounded is-medium button-css"> <a href="#about">A propos</a></button>
+                        <button type="button" class="button is-rounded is-medium button-css"> <a href="#about">A propos</a></button>
                     </div>
                 </div>
             </section>
         </div>
-        <div class="column has-text-centered img-djp-manu">
-            <img src="ressources/logo-djpmanu-high-size.png" alt="logo DJP MANU" class="img-djplogo-high">
+        <div class="column has-text-centered box-img-home">
+            <img src="ressources/logo-djpmanu-high-size.webp" alt="logo DJP MANU accueil" class="img-djplogo-high">
         </div>
     </div>
     <!-- #endregion -->
-    
+
     <!-- #region About -->
     <section class="container" id="about">
         <h2 class="title is-1 has-text-centered">A propos</h2>
 
         <figure class="image container is-128x128">
-            <img src="/ressources/logo-djpmanu.jpg" alt="Logo DJP MANU" class="is-rounded is-centered">
+            <img src="/ressources/logo-djpmanu.jpg" alt="Logo DJP MANU section a propos" class="is-rounded is-centered">
         </figure>
 
         <div class="columns is-centered txt-about">
             <p class="column is-6 has-text-justified">
 
-                <strong>Après plus de 35 ans d’expériences :</strong><br>Soucieux de l’exigence des clients, 
-                Manu décide d’ouvrir les portes de sa propre entreprise de couverture à Lamotte-Beuvron.<br>Dans le but d’apporté expertise, transparence
+                <strong>Après plus de 35 ans d’expériences :</strong><br>Soucieux de l’exigence des clients,
+                Manu décide d’ouvrir les portes de sa propre entreprise de couverture à Lamotte-Beuvron.<br>Dans le but
+                d’apporté expertise, transparence
                 et une écoute de vos attentes.<br>
                 L'entreprise DJP-MANU est aujourd'hui à votre service Depuis bientôt 10 ans<br><br>
-                <strong>L’objectif de notre entreprise est simple :</strong><br>écoutez, vous conseiller, afin de vous proposer les produits, 
+                <strong>L’objectif de notre entreprise est simple :</strong><br>écoutez, vous conseiller, afin de vous
+                proposer les produits,
                 et possibilités de réaliser vos souhaits.
                 Rien n’est mis de côté, votre satisfaction est notre priorité.<br>
                 L'entreprise DJP-MANU vous proposes ces services de couverture, zinguerie et pose de fênetre de toit.
@@ -79,50 +81,37 @@
 
     <br><br>
 
-    <!-- #region AVANT / APRES -->
-    <!--<section class="container" id="beforeAfter">
-        <h2 class="title is-1 has-text-centered beforeAfterH2">Avant / Après</h2>
-
-        <div class="container_avant_apres is-mobile">
-            <div class="slider_container">
-                <div class="slider_before"></div>
-                <div class="slider_separator"></div>
-                <div class="slider_after"></div>
-                <input class="slider_range" type="range" min="0" max="100" value="50">
-            </div>
-        </div>
-    </section>-->
-
+    <!-- #region AVANT APRES -->
     <section class="container" id="beforeAfter">
         <h2 class="title is-1 has-text-centered beforeAfterH2">Avant / Après</h2>
 
         <div class="container_avant_apres is-mobile">
             <div class="avantApresSlider has-text-centered">
-                <img class="img_new" id="before_img" src="/ressources/city1.jpg">
-                <img class="img_new" id="my-img_new" src="/ressources/city2.jpg">
-                <input type="range" min="0" max="100" value="50" id="slider_new" oninput="slide()">
+                <img class="img_in_slider" id="before_img" src="/ressources/city1.webp" alt="image avant">
+                <img class="img_in_slider" id="after_img" src="/ressources/city2.webp" alt="image apres">
+                <input type="range" min="0" max="100" value="50" id="slider_range" oninput="slide()">
             </div>
         </div>
 
         <div class="container has-text-centered other_img_box">
             <div class="other_img">
-                <img src="/ressources/flower2.jpg" alt="city" class="img1">
+                <img src="/ressources/flower2.webp" alt="city" class="img1">
             </div>
             <div class="other_img">
-                <img src="/ressources/flower1.jpg" alt="fleurs" class="img2">
+                <img src="/ressources/city1.webp" alt="fleurs" class="img2">
             </div>
             <div class="other_img">
-                <img src="/ressources/flower1.jpg" alt="fleurs" class="img3">
-            </div>
+                <img src="/ressources/flower1.webp" alt="fleurs other" class="img3">
             </div>
         </div>
-    </section>  
+        </div>
+    </section>
     <!-- #endregion -->
 
     <!-- #region Nos méthodes -->
 
     <br><br>
-    <section class="container" id="real">
+    <section class="container" id="methodes">
         <h2 class="title is-1 has-text-centered">Nos Méthodes</h2>
         <h2 class="subtitle is-3 has-text-centered has-text-weight-bold subtitle-methode">Un chantier irréprochable</h2>
 
@@ -131,24 +120,22 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="/ressources/clean.jpg" alt="logo DJP MANU" class="is-rounded">
+                            <img src="/ressources/clean.webp" alt="logo DJP MANU" class="is-rounded img_clean_about">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <h2 class="title is-3 has-text-centered">Un nétoyage avant tout</p>
+                                <h2 class="title is-3 has-text-centered">Un nettoyage</p>
                             </div>
                         </div>
                         <div class="content">
                             <p class="has-text-justified">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea distinctio cumque labore cum autem cupiditate ipsam magnam! Magnam voluptatum suscipit, fugiat adipisci vero aliquid. Id ducimus nisi distinctio fuga.
+                                L'entreprise DJP-MANU met l'accent sur la propreté des chantiers.
+                                Un chantier propre favorise l'avancement des travaux. D'autre part la propreté du chantier 
+                                Permet au client de ne pas ressentir de désagréments qu'apporte les chantiers en règle général.
+                                Ainsi à chaque fin de journée de travail, l'entreprise DJP-MANU consacre en moyenne 1h au rangement et nettoyage du chantier.
                             </p>
-                            <a href="#">@bulmaio</a>.
-                            <a href="#">#css</a>
-                            <a href="#">#responsive</a>
-                            <br>
-                            <time date="2022-1-1">11:09 PM - 1 Jan 2016</time>
                         </div>
                     </div>
                 </div>
@@ -158,7 +145,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="/ressources/security.jpg" alt="logo DJP MANU" class="is-rounded">
+                            <img src="/ressources/security.webp" alt="logo DJP MANU" class="is-rounded img_security_about">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -169,13 +156,11 @@
                         </div>
                         <div class="content">
                             <p class="has-text-justified">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea distinctio cumque labore cum autem cupiditate ipsam magnam! Magnam voluptatum suscipit, fugiat adipisci vero aliquid. Id ducimus nisi distinctio fuga.
+                                C'est ainsi que l'entreprise DJP-MANU abordera votre chantier.
+                                Tous les choix et réalisation seront réalisés en fonction de plusieurs critères de sécurité.
+                                L'entreprise s'adapte à vos préoccupations. D'autre part, après chaque nettoyage et rangement, les outils utilisés durant le chantier 
+                                Son soigneusement rangé et rien n'est laisser à portée de main pour assurer la sécurité de tous.
                             </p>
-                            <a href="#">@bulmaio</a>.
-                            <a href="#">#css</a>
-                            <a href="#">#responsive</a>
-                            <br>
-                            <time date="2022-1-1">11:09 PM - 1 Jan 2016</time>
                         </div>
                     </div>
                 </div>
@@ -189,52 +174,52 @@
     <!-- #region Contactez-nous -->
     <div class="bg-color-contact">
         <form action="https://formsubmit.co/guyliane@live.fr" method="POST">
-        <section class="container contactBox" id="contact">
-            <h2 class="title is-1 has-text-centered label-contact pt-6 pb-5">Contactez-nous</h2>
-            <div class="field">
-                <label for="" class="label label-contact">Nom</label>
-                <div class="control">
-                    <input type="text" class="input" name="nom" placeholder="Nom" required>
+            <section class="container contactBox" id="contact">
+                <h2 class="title is-1 has-text-centered label-contact pt-6 pb-5">Contactez-nous</h2>
+                <div class="field">
+                    <label for="" class="label label-contact">Nom</label>
+                    <div class="control">
+                        <input type="text" class="input" name="nom" placeholder="Nom" required>
+                    </div>
                 </div>
-            </div>
 
-            <div class="field">
-                <label for="" class="label label-contact">Prénom</label>
-                <div class="control has-icons-left">
-                    <input type="text" class="input" name="prenom" placeholder="Prénom" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
+                <div class="field">
+                    <label for="" class="label label-contact">Prénom</label>
+                    <div class="control has-icons-left">
+                        <input type="text" class="input" name="prenom" placeholder="Prénom" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="field">
-                <label for="" class="label label-contact">Email</label>
-                <div class="control has-icons-left">
-                    <input type="email" class="input" name="email" placeholder="Email" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
+                <div class="field">
+                    <label for="" class="label label-contact">Email</label>
+                    <div class="control has-icons-left">
+                        <input type="email" class="input" name="email" placeholder="Email" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="field">
-                <label for="" class="label label-contact">Message</label>
-                <div class="control">
-                    <textarea class="textarea" name="message" placeholder="Votre message ..." required ></textarea>
+                <div class="field">
+                    <label for="" class="label label-contact">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message" placeholder="Votre message ..." required></textarea>
+                    </div>
                 </div>
-            </div>
 
-            <input type="hidden" name="_subject" value="Nouveau message depuis le site web !">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://djp-manu.netlify.app/thanks.html">
+                <input type="hidden" name="_subject" value="Nouveau message depuis le site web !">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://djp-manu.netlify.app/thanks.html">
 
-            <div class="field is-grouped">
-                <div class="control">
-                    <button type="submit" class="button button-send-css">Envoyer</button>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button type="submit" role="button" class="button button-send-css">Envoyer</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </form>
     </div>
     <!-- #endregion -->
